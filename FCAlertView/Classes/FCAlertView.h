@@ -102,6 +102,7 @@
 @property BOOL detachButtons;
 @property BOOL fullCircleCustomImage;
 @property BOOL hideSeparatorLineView;
+@property BOOL slightlyLargerWithBackground;
 
 // Default Types of Alerts
 

@@ -1,4 +1,4 @@
-//
+op//
 //  FCAlertView.m
 //  ShiftRide
 //
@@ -63,6 +63,7 @@
         _hideDoneButton = NO;
         _fullCircleCustomImage = NO;
         _hideSeparatorLineView = NO;
+        _slightlyLargerWithBackground = NO;
         
         defaultSpacing = [self configureAVWidth];
         defaultHeight = [self configureAVHeight];
@@ -844,6 +845,11 @@
                                            -30.0f,
                                            60.0f,
                                            60.0f);
+    } else if (_slightlyLargerWithBackground) {
+        alertViewVector.frame = CGRectMake(alertViewContents.frame.size.width/2 - 20.0f,
+                                           -20.0f,
+                                           40.0f,
+                                           40.0f);
     } else {
         alertViewVector.frame = CGRectMake(alertViewContents.frame.size.width/2 - 15.0f,
                                            -15.0f,
