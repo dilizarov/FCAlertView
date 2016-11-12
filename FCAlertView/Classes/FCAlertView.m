@@ -622,7 +622,7 @@
         visualEffectView3.userInteractionEnabled = NO;
         [horizontalSeparator addSubview:visualEffectView3];
         
-        if (!_hideAllButtons && !_hideDoneButton && !_detachButtons) {
+        if (!_hideAllButtons && !_hideDoneButton && !_detachButtons && !_hideSeparatorLineView) {
             [alertView addSubview:horizontalSeparator];
         }
         
@@ -795,7 +795,7 @@
         visualEffectView2.userInteractionEnabled = NO;
         [secondSeparator addSubview:visualEffectView2];
         
-        if (!_hideAllButtons && !_detachButtons) {
+        if (!_hideAllButtons && !_detachButtons && !_hideSeparatorLineView) {
             [alertView addSubview:firstSeparator];
             [alertView addSubview:secondSeparator];
         }
